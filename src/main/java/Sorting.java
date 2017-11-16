@@ -29,7 +29,15 @@ public class Sorting {
      * @return the sorted array, or null on failure
      */
     static int[] bubbleSort(final int[] array) {
-        return null;
+        int temp = 0;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i - 1] > array[i]) {
+                temp = array[i - 1];
+                array[i] = array[i - 1];
+                array[i - 1] = temp;
+            }
+        }
+        return array;
     }
 
     /**
@@ -49,6 +57,16 @@ public class Sorting {
      * @return the sorted array, or null on failure
      */
     static int[] mergeSort(final int[] array) {
+        if (array.length == 1) {
+            return array;
+        } else if (array.length == (1 + 1)) {
+            return array;
+        } else {
+            int mid = (array.length / 2);
+           int[] array1 = new int[array.length / 2];
+
+        }
+
         return null;
     }
 
